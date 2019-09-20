@@ -1,0 +1,97 @@
+<!doctype html>
+    <html lang="en">
+        <title>StackOverflow-Lite|Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="CSS/style.css">
+        </link>
+        <head>
+                <script type="text/javascript">
+                    
+                    function show(id) {
+                    var e = document.getElementById(id);
+                    if(e.style.display == 'none')
+                    e.style.display = 'block';
+                    else
+                    e.style.display = 'none';
+                    }
+                </script>
+
+        </head>
+    
+    <body>
+        <!--main navigation-->
+        <header class = "top-bar js-top-bar  _fixed top-bar">
+                    <nav> <logo></logo><img src="images/stackoverflow2.png" alt="" height="100"></logo>
+                            <ul style="float: right;;">
+                            
+                           
+                                <li class ="active"><a>Home</a></li>
+                                <li><a href="forum.html">Forum</a></li>
+
+                                
+                                 <li><input type="text" placeholder="Email" name="email"></li>
+                                       <li><input type="text" placeholder="Password" name="psw"></li>
+                                        <br><li style="float: right"><a type="submit" href="user.html" >SignIn</a>
+                                        </li>
+                                      </li>
+                               <!---use jscriot toggle---
+                                 <li><button onclick="show('SignIn');">SignIn</button></li>
+                                <div  class="formBox" id="SignIn" style="display:none">
+                                        <form>
+                                            <br>
+                                            <br>
+                                                <p>Email</p>
+                                                <input type="text" placeholder="Email">
+                                                <p>Password</p>
+                                                <input type="Password" placeholder="********">
+                                                <button><a href="user.html">Login</a></button>
+                                            </form></div> 
+                                        -->
+
+                              
+                            </ul>
+                        </nav>                
+        
+
+        </header>
+        
+
+                
+                <div class="container"  >
+
+                        
+                    <div class="left">
+                        
+                        <h2>StackOverflow-Lite</h2>
+                        <h1>Learn, Share, Build</h1>
+                        <h3></h3>
+                        <p>Join the world's largest developer community</p>
+
+                        <button onclick="show('SignUp');">Join us</button>
+                    </div>
+
+                    <div class="right">
+                        <div class="formBox" id= "SignUp" style="display: none">
+                        <form>
+                            <p>First Name</p>
+                            <input type="text" placeholder="First Name">
+                            
+                            <p>Last Name</p>
+                            <input type="text" placeholder="Last Name">
+                            <p>Email</p>
+                            <input type="text" placeholder="Email">
+                            <p>Password</p>
+                            <input type="Password" placeholder="********">
+                            <input type="submit" name="" value="SignUp">
+                        </form>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+     
+    </body>
+    </html>

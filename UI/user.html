@@ -1,0 +1,127 @@
+<!doctype html>
+    <html lang="en">
+        <title>StackOverflow-Lite|User</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="CSS/style.css">
+        </link>
+        <head>
+
+        </head>
+    
+    <body>
+        <!--main navigation-->
+        <header class = "top-bar js-top-bar  _fixed top-bar">
+                    <nav>
+                            <logo><img src="images/stackoverflow2.png" alt="" height="100"></logo>
+                            <ul style="float:right;">
+                                <li ><a href="index.html">Home</a></li>
+                                <li><a href="forum.html">Forum</a></li>
+                                <li class ="active"><a href="Index.html">SignOut</a></li>
+                            </ul>
+                        </nav>                
+        
+
+        </header>
+            
+    </body><h3><img src="images/Profile-512.png" height="100" width="100" style="float: right;" >Welcome Rhytah!! Here are your views:</h3>
+    
+    
+    <div class="tab">
+      <button class="tablinks" onclick="opentab(event, 'questions')">Asked questions </button>
+      <button class="tablinks" onclick="opentab(event, 'answers')">Answers given</button>
+      <button class="tablinks" onclick="opentab(event, 'topuserQuestions')">Top Questions I asked</button>
+      <button class="tablinks" onclick="opentab(event, 'recentQuestions')">Questions I recently asked</button>
+    </div>
+    
+    <div id="questions" class="tabcontent">
+      <h3>Number of questions asked</h3>
+      <p>10</p>
+    </div>
+    
+    <div id="answers" class="tabcontent">
+      <h3>Number of answers given</h3>
+      <p>15</p> 
+    </div>
+    
+    <div id="topuserQuestions" class="tabcontent">
+      <h3>Questions I asked with the most answers</h3>
+      <ol>
+          <li><center><a name="question"></a>
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+            <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+            <td align="right">&nbsp;</td></tr></table></td></tr></table>
+            <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+            <b>Anybody know what bootsrap is?</b>
+            <br>
+            
+            <td width="1%" nowrap><font size="-1">Posted:
+            06 Jul 2018 12:16am</td></tr>
+            </font>
+            <td width="1%" nowrap><font size="-1">Answers:  20 answers
+                    </font></table></li>
+           <li><center><a name="question"></a>
+            <table width="98%" border="0" cellspacing="0" cellpadding="0">
+            <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+            <td align="right">&nbsp;</td></tr></table></td></tr></table>
+            <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+            <b>What was the big bang?</b>
+            <br>
+        
+            <td width="1%" nowrap><font size="-1">Posted:
+            15 May 2018 02:16am</td></tr>
+            </font>
+            <td width="1%" nowrap><font size="-1">Answers:  15 answers
+                    </font></table></li>
+            <li><center><a name="question"></a>
+                    <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                    <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Question</b></td>
+                    <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                    <table width="98%" border="0" cellspacing="0" cellpadding="2" class=""><tr bgcolor="#eeeeee" valign="top"><td width="99%"><font size="-1">Subject:
+                    <b>What is the difference between form get and form post?</b>
+                    <br>
+                    <td width="1%" nowrap><font size="-1">Posted:
+                    06 Jan 2018 5:16pm</td></tr>
+                    </font>
+                    <td width="1%" nowrap><font size="-1">Answers:  20 answers
+                            </font></table>
+            </li>
+      </ol>
+    </div>
+    <div id="recentQuestions" class="tabcontent">
+        <h3>My recently asked questions</h3>
+    <ol>
+            <center><a name="question"></a>
+                <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr><td bgcolor="#c2bddd"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><b>Questions</b></td>
+                <td align="right">&nbsp;</td></tr></table></td></tr></table>
+                 
+                </font> </td> </tr> </table> </center> 
+                <li>How does slack work?</li><br>
+                <li>What is javascript?</li><br>
+                <li>Can i create a data structure without a database?</li><br>
+                <li>How can I implement test during TDD</li><br>
+                <li>How do I vote answers on StackOverflow?</li><br>
+                <li>Is it possible to delete a pic entirely off the web?</li>
+        </ol>
+    </div>
+    
+    <script>
+    function opentab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+         
+
+    </html>
